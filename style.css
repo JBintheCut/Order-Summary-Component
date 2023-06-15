@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+}
+
+body {
+    background:  hsl(225, 100%, 98%) url('pattern-background-desktop.svg') no-repeat top left;
+    background-size: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    height: 600px;
+    max-width: 400px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    box-shadow: 0 10px 15px  rgba(0, 0, 0, 0.3);
+}
+
+ .order-img {
+    height: 100%;
+}
+
+.hero {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.description h1 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 27px;
+}
+
+.description p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-plan {
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    width: 75%;
+    height: 70%;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px;
+    justify-content: space-around;
+    border-radius: 10px;
+    align-items: center;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+.price-plan span {
+    display: block;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.music-icon {
+    border-radius: 50%;
+}
+
+.price-plan a {
+    margin: auto;
+    color: hsl(228, 45%, 44%)
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 50%;
+    padding: 12px 70px; 
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.cancel {
+    padding: 20px;
+    color: hsl(224, 23%, 55%);
+    cursor: pointer;
+}
+
+.payment:hover {
+    background-color: hsl(224, 23%, 55%);
+    opacity: 1;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+    background:  hsl(225, 100%, 98%) url('pattern-background-desktop.svg') no-repeat top left;
+    background-size: 100%;
+    }
+
+    .container {
+        width: 350px;
+    }
+}
